@@ -3,18 +3,18 @@
 The example shows how to create a runnable Jar file with Mule Embedded.
 
 This new example uses Mule Kernel Dependency from Mule, 
-this library has to be downloade from:
+this library has to be downloaded from:
 
 https://developer.mulesoft.com/download-mule-esb-runtime
 
-After download the version 3.8.0, first unpack the file and copy lib directory into this project.
+After download the version 3.8.0, unpack the file and copy lib directory into this project.
 
-The example uses Mule CE 3.8.0, but it may works with Mule EE, I have not anymore account to EE Repository (for Mule EE you need Mule EE License).  
+The example uses Mule CE 3.8.0 and I could NOT find Mule Kernel for EE.
 
-For Mule EE, you need:
+In case you find one for Mule EE, you need to:
 
 + Include Mule EE license file in src/main/resources.
-+ Start the java process with the parameter: 
++ Start the java process with the argument: 
 
 ```
 -Djava.util.prefs.PreferencesFactory=com.mulesource.licm.pref.MulePreferencesFactory
