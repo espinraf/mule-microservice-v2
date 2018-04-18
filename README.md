@@ -14,7 +14,7 @@ The example uses Mule CE 3.8.0 and I could NOT find Mule Kernel for EE.
 In case you find one for Mule EE, you need to:
 
 + Include Mule EE license file in src/main/resources.
-+ Start the java process with the argument: 
++ Start the java process with the system property: 
 
 ```
 -Djava.util.prefs.PreferencesFactory=com.mulesource.licm.pref.MulePreferencesFactory
@@ -43,7 +43,7 @@ gradle clean build
 4) Run
  
 ```
-java -jar build/libs/mule-example-1.0-microservice.jar 
+java -jar build/libs/mule-example-1.0.jar 
 ```
 
 5) Go to http://localhost:8081/mule-ms
