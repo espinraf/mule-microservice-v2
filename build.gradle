@@ -1,0 +1,29 @@
+
+apply plugin: "java"
+apply plugin: "application"
+apply plugin: "build-announcements"
+
+
+
+group = "com.redpill"
+archivesBaseName = "mule-example"
+version = 1.0
+description = "Example of a Mule Microservice"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+mainClassName = "com.redpill.MicroserviceMuleBootstrap"
+
+
+//Capsule plugin to include all Mule specific directories.
+sourceSets.main.resources {
+	srcDir "src/main/groovy"
+	srcDir "src/main/app"
+	srcDir "src/main/api"
+}
+
+dependencies {
+    compile fileTree(dir: "lib", include: "**/*.jar")
+}
+
