@@ -43,7 +43,7 @@ gradle clean build
 4) Run
  
 ```
-java -jar build/libs/mule-example-1.0.jar 
+gradle run 
 ```
 
 5) Go to http://localhost:8081/mule-ms
